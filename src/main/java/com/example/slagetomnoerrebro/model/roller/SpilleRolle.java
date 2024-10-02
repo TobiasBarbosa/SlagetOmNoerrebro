@@ -20,7 +20,6 @@ public enum SpilleRolle {
     }
 
     //***METHODS***-----------------------------------------------------------------------------------------------------
-
     public List<SpilleRolle> getSpilleRollerListe() {
         spilleRollerListe.add(SpilleRolle.ANARKIST);
         spilleRollerListe.add(SpilleRolle.BANDEMEDLEM);
