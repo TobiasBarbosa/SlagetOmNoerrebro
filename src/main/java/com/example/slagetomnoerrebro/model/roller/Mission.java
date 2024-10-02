@@ -36,5 +36,11 @@ public class Mission {
         return missionOpklaret;
     }
 
+    //***SETTER METHODS***----------------------------------------------------------------------------------------------
+    public void setMissionOpklaret(boolean missionOpklaret) {
+        this.missionOpklaret = missionOpklaret;
+    }
+
+
     //***END***---------------------------------------------------------------------------------------------------------
 }

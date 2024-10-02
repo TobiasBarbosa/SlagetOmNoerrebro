@@ -1,6 +1,7 @@
 package com.example.slagetomnoerrebro.model.roller;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public enum SpilleRolle {
@@ -21,9 +22,7 @@ public enum SpilleRolle {
 
     //***METHODS***-----------------------------------------------------------------------------------------------------
     public List<SpilleRolle> getSpilleRollerListe() {
-        spilleRollerListe.add(SpilleRolle.ANARKIST);
-        spilleRollerListe.add(SpilleRolle.BANDEMEDLEM);
-        spilleRollerListe.add(SpilleRolle.HIPSTER);
+        spilleRollerListe.addAll(Arrays.asList(SpilleRolle.BANDEMEDLEM,SpilleRolle.ANARKIST,SpilleRolle.HIPSTER));
         return spilleRollerListe;
     }
 
