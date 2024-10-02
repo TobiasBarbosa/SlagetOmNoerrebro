@@ -7,32 +7,34 @@ public class Grund {
     private int felt;
     private int prisForGrund;
     private int leje;
-    private int lejeMed1Hus;
-    private int lejeMed2Huse;
-    private int lejeMed1Hotel;
+    private int leje1Hus;
+    private int leje2Huse;
+    private int leje1Hotel;
 
     private int prisForKøbAfHus;
     private int prisForKøbAfHotel;
     private int prisForPantsaetning;
     private boolean pantsat;
+    private String farve;
 
     private String beskrivelse;
 
     //***CONSTRUCTOR***-------------------------------------------------------------------------------------------------
-    public Grund(String grundNavn, int felt, int prisForGrund, int leje, int lejeMed1Hus, int lejeMed2Huse, int lejeMed1Hotel,
-                 int prisForKøbAfHus, int prisForKøbAfHotel, int prisForPantsaetning) {
+    public Grund(String grundNavn, int felt, int prisForGrund, int leje, int leje1Hus, int leje2Huse, int leje1Hotel,
+                 int prisForKøbAfHus, int prisForKøbAfHotel, int prisForPantsaetning, String farve) {
 
         this.grundNavn = grundNavn;
         this.felt = felt;
         this.prisForGrund = prisForGrund;
         this.leje = leje;
-        this.lejeMed1Hus = lejeMed1Hus;
-        this.lejeMed2Huse = lejeMed2Huse;
-        this.lejeMed1Hotel = lejeMed1Hotel;
+        this.leje1Hus = leje1Hus;
+        this.leje2Huse = leje2Huse;
+        this.leje1Hotel = leje1Hotel;
         this.prisForKøbAfHus = prisForKøbAfHus;
         this.prisForKøbAfHotel = prisForKøbAfHotel;
         this.prisForPantsaetning= prisForPantsaetning;
         pantsat = false;
+        this.farve = farve;
     }
 
     public Grund(String grundNavn, int felt, String beskrivelse){
@@ -59,16 +61,16 @@ public class Grund {
         return leje;
     }
 
-    public int getLejeMed1Hus() {
-        return lejeMed1Hus;
+    public int getLeje1Hus() {
+        return leje1Hus;
     }
 
-    public int getLejeMed2Huse() {
-        return lejeMed2Huse;
+    public int getLeje2Huse() {
+        return leje2Huse;
     }
 
-    public int getLejeMed1Hotel() {
-        return lejeMed1Hotel;
+    public int getLeje1Hotel() {
+        return leje1Hotel;
     }
 
     public int getPrisForKøbAfHus() {
