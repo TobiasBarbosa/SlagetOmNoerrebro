@@ -10,7 +10,6 @@ public class Mission {
     private String beskrivelse;
     private SpilleRolle spilleRolle;
     private boolean missionOpklaret;
-    List<Mission> alleMissioner = new ArrayList<>();
 
     //***CONSTRUCTOR***-------------------------------------------------------------------------------------------------
     public Mission(String missionNavn, String beskrivelse, SpilleRolle spilleRolle){
@@ -31,6 +30,10 @@ public class Mission {
 
     public SpilleRolle getSpilleRolle() {
         return spilleRolle;
+    }
+
+    public boolean isMissionOpklaret() {
+        return missionOpklaret;
     }
 
     //***END***---------------------------------------------------------------------------------------------------------

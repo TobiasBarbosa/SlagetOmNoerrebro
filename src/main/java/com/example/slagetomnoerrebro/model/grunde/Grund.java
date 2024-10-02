@@ -10,7 +10,6 @@ public class Grund {
     private int leje1Hus;
     private int leje2Huse;
     private int leje1Hotel;
-
     private int prisForKøbAfHus;
     private int prisForKøbAfHotel;
     private int prisForPantsaetning;

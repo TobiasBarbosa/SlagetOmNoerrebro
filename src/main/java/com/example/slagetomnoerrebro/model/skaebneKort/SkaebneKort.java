@@ -4,22 +4,18 @@ public class SkaebneKort {
 
     //***ATTRIBUTES***--------------------------------------------------------------------------------------------------
     private int kortId;
-    private String titel;
+    //private String titel;
     private String beskrivelse;
 
     //***CONSTRUCTOR***-------------------------------------------------------------------------------------------------
-    public SkaebneKort(String titel, String beskrivelse){
-        this.titel = titel;
+    public SkaebneKort(int kortId, String beskrivelse){
+        this.kortId = kortId;
         this.beskrivelse = beskrivelse;
     }
 
     //***GETTER METHODS***----------------------------------------------------------------------------------------------
     public int getKortId() {
         return kortId;
-    }
-
-    public String getTitel() {
-        return titel;
     }
 
     public String getBeskrivelse() {
