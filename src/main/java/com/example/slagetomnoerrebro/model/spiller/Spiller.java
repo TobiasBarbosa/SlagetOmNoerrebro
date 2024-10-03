@@ -14,7 +14,7 @@ public class Spiller {
     private int spillerPenge;
     private Brik brik;
 
-    private Missioner missioner = new Missioner();
+    private final Missioner missioner = new Missioner();
 
     //***CONSTRUCTOR***-------------------------------------------------------------------------------------------------
     public Spiller(String spillerNavn, Brik brik, SpilleRolle rolle){
