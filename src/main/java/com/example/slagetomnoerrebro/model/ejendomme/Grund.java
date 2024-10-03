@@ -1,4 +1,4 @@
-package com.example.slagetomnoerrebro.model.grunde;
+package com.example.slagetomnoerrebro.model.ejendomme;
 
 public class Grund {
 

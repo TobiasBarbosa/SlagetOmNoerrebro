@@ -1,4 +1,4 @@
-package com.example.slagetomnoerrebro.model.roller;
+package com.example.slagetomnoerrebro.model.spiller;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,8 +8,7 @@ import java.util.Random;
 public class Missioner {
 
     //***ATTRIBUTES***--------------------------------------------------------------------------------------------------
-    List<Mission> missioner;
-    SpilleRolle rolle;
+    private List<Mission> missioner;
 
     //***CONSTRUCTOR***-------------------------------------------------------------------------------------------------
     public Missioner(){
@@ -22,7 +21,7 @@ public class Missioner {
     }
 
     //***METHODS***----------------------------------------------------------------------------------------------------
-    public List<Mission> generateRandomMissioner(){
+    public List<Mission> generateRandomMissioner(SpilleRolle rolle){
         Random random = new Random();
 
         //^^^ANARKIST^^^´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´

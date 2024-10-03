@@ -1,4 +1,4 @@
-package com.example.slagetomnoerrebro.model.roller;
+package com.example.slagetomnoerrebro.model.spiller;
 
 public class Mission {
 

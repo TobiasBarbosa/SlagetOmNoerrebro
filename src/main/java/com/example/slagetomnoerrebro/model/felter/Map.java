@@ -1,6 +1,6 @@
-package com.example.slagetomnoerrebro.model;
+package com.example.slagetomnoerrebro.model.felter;
 
-import com.example.slagetomnoerrebro.model.grunde.Grund;
+import com.example.slagetomnoerrebro.model.ejendomme.Grund;
 
 public class Map {
 

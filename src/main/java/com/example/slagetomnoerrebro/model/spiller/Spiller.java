@@ -1,4 +1,4 @@
-package com.example.slagetomnoerrebro.model.roller;
+package com.example.slagetomnoerrebro.model.spiller;
 
 import java.util.List;
 import java.util.Random;
@@ -14,13 +14,13 @@ public class Spiller {
     private int spillerPenge;
     private Brik brik;
 
-    private Missioner missioner;
+    private Missioner missioner = new Missioner();
 
     //***CONSTRUCTOR***-------------------------------------------------------------------------------------------------
-    public Spiller(String spillerNavn, Brik brik){
+    public Spiller(String spillerNavn, Brik brik, SpilleRolle rolle){
         this.spillerNavn         = spillerNavn;
-             rolle               = generateRandomSpilleRolle();
-             specifikkeMissioner = missioner.generateRandomMissioner();
+        this.rolle               = rolle;
+             specifikkeMissioner = missioner.generateRandomMissioner(rolle);
              spillerPenge        = 32000;
         this.brik                = brik;
     }
@@ -51,11 +51,12 @@ public class Spiller {
     }
 
     //***METHODS***-----------------------------------------------------------------------------------------------------
-    public SpilleRolle generateRandomSpilleRolle(){
-        Random random = new Random();
-        int randomIndex = random.nextInt(rolle.getSpilleRollerListe().size());
-        return rolle.spilleRollerListe.get(randomIndex);
-    }
+    //man vælger selv sin rolle?
+//    public SpilleRolle generateRandomSpilleRolle(){
+//        Random random = new Random();
+//        int randomIndex = random.nextInt(rolle.getSpilleRollerListe().size());
+//        return rolle.spilleRollerListe.get(randomIndex);
+//    }
 
     //***END***---------------------------------------------------------------------------------------------------------
 }
