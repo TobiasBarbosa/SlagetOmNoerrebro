@@ -4,7 +4,6 @@ public class SkaebneKort {
 
     //***ATTRIBUTES***--------------------------------------------------------------------------------------------------
     private int kortId;
-    //private String titel;
     private String beskrivelse;
 
     //***CONSTRUCTOR***-------------------------------------------------------------------------------------------------
