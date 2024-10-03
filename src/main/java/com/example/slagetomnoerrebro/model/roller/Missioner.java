@@ -25,7 +25,7 @@ public class Missioner {
     public List<Mission> generateRandomMissioner(){
         Random random = new Random();
 
-        //Anarkist
+        //^^^ANARKIST^^^´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´
         Mission missionAnarkist1 = new Mission("Stands gentrificeringen", "Brænd en grund med minimum 2 x huse ned via feltet Vild med ild", SpilleRolle.ANARKIST);
         Mission missionAnarkist2 = new Mission("Kæmp for Ungeren", "Byg 2 x huse på Jagtvej 69", SpilleRolle.ANARKIST);
         Mission missionAnarkist3 = new Mission("Dine penge mig i røven", "Land på Money Exchange x 2", SpilleRolle.ANARKIST);
@@ -68,7 +68,7 @@ public class Missioner {
                 missionAnarkist15
         ));
 
-        //Bandemedlem
+        //^^^BANDEMEDLEM^^^´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´
         Mission missionBandemedlem1 = new Mission("Brænd dine broer", "Brænd Dronning Louises Bro ned via feltet Vild med ild x 2", SpilleRolle.BANDEMEDLEM);
         Mission missionBandemedlem2 = new Mission("Prison break", "Bliv løsladt fra Salatfadet vha. terningeslag", SpilleRolle.BANDEMEDLEM);
         Mission missionBandemedlem3 = new Mission("Sælg hash til soundboksdrengene", "Ej Nørrebroparken + 30.000 kr. i kontanter", SpilleRolle.BANDEMEDLEM);
@@ -111,7 +111,7 @@ public class Missioner {
                 missionBandemedlem15
         ));
 
-        //Hipster
+        //^^^HIPSTER^^^´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´
         Mission missionHipster1 = new Mission("Gentrificer Nørrebro", "Land på Gentrificer en grund x 2", SpilleRolle.HIPSTER);
         Mission missionHipster2 = new Mission("Lav kreativt bureau med kant", "Byg 2 x huse på Jagtvej 69 ", SpilleRolle.HIPSTER);
         Mission missionHipster3 = new Mission("Udvid Mikkeller", "Byg 2 x huse på Mikkeller", SpilleRolle.HIPSTER);
@@ -125,7 +125,7 @@ public class Missioner {
                 missionHipster4,
                 missionHipster5
         ));
-        //---
+
         Mission missionHipster6 = new Mission("hipster6", "hipster opgave6", SpilleRolle.HIPSTER);
         Mission missionHipster7 = new Mission("hipster7", "hipster opgave7", SpilleRolle.HIPSTER);
         Mission missionHipster8 = new Mission("hipster8", "hipster opgave8", SpilleRolle.HIPSTER);
@@ -139,7 +139,7 @@ public class Missioner {
                 missionHipster9,
                 missionHipster10
         ));
-        //--
+
         Mission missionHipster11 = new Mission("hipster11", "hipster opgave11", SpilleRolle.HIPSTER);
         Mission missionHipster12 = new Mission("hipster12", "hipster opgave12", SpilleRolle.HIPSTER);
         Mission missionHipster13 = new Mission("hipster13", "hipster opgave13", SpilleRolle.HIPSTER);

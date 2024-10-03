@@ -1,8 +1,5 @@
 package com.example.slagetomnoerrebro.model.roller;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Mission {
 
     //***ATTRIBUTES***--------------------------------------------------------------------------------------------------
@@ -40,7 +37,6 @@ public class Mission {
     public void setMissionOpklaret(boolean missionOpklaret) {
         this.missionOpklaret = missionOpklaret;
     }
-
 
     //***END***---------------------------------------------------------------------------------------------------------
 }

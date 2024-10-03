@@ -5,21 +5,23 @@ import java.util.Random;
 
 public class Spiller {
 
+    //TODO lav metode til at håndtere pengesedler fordeling
+
     //***ATTRIBUTES***--------------------------------------------------------------------------------------------------
     private String spillerNavn;
     private SpilleRolle rolle;
     private List<Mission> specifikkeMissioner;
-    private int penge;
-    private Brikker brik;
+    private int spillerPenge;
+    private Brik brik;
 
     private Missioner missioner;
 
     //***CONSTRUCTOR***-------------------------------------------------------------------------------------------------
-    public Spiller(String spillerNavn, Brikker brik){
+    public Spiller(String spillerNavn, Brik brik){
         this.spillerNavn         = spillerNavn;
              rolle               = generateRandomSpilleRolle();
              specifikkeMissioner = missioner.generateRandomMissioner();
-             penge               = 13000; //hvor mange penge er det?
+             spillerPenge        = 32000;
         this.brik                = brik;
     }
 
@@ -28,8 +30,8 @@ public class Spiller {
         return rolle;
     }
 
-    public int getPenge() {
-        return penge;
+    public int getSpillerPenge() {
+        return spillerPenge;
     }
 
     public String getSpillerNavn() {
@@ -40,7 +42,7 @@ public class Spiller {
         return specifikkeMissioner;
     }
 
-    public Brikker getBrik() {
+    public Brik getBrik() {
         return brik;
     }
 

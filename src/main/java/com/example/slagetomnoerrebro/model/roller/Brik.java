@@ -1,6 +1,6 @@
 package com.example.slagetomnoerrebro.model.roller;
 
-public enum Brikker {
+public enum Brik {
 
     //***ENUMS***-------------------------------------------------------------------------------------------------------
     LIMOUSINE("Limousine", "Hvid"),
@@ -13,7 +13,7 @@ public enum Brikker {
     String farve;
 
     //***CONSTRUCTOR***-------------------------------------------------------------------------------------------------
-    Brikker(String displayNavn, String farve){
+    Brik(String displayNavn, String farve){
         this.displayNavn = displayNavn;
         this.farve = farve;
     }
