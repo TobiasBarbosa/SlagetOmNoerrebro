@@ -1,5 +1,8 @@
 package com.example.slagetomnoerrebro.model.spiller;
 
+import com.example.slagetomnoerrebro.model.ejendomme.Grund;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -13,7 +16,8 @@ public class Spiller {
     private List<Mission> specifikkeMissioner;
     private int spillerPenge;
     private Brik brik;
-
+    private List<Grund> ejetGrunde;
+    private int felt;
     private final Missioner missioner = new Missioner();
 
     //***CONSTRUCTOR***-------------------------------------------------------------------------------------------------
@@ -23,6 +27,8 @@ public class Spiller {
              specifikkeMissioner = missioner.generateRandomMissioner(rolle);
              spillerPenge        = 32000;
         this.brik                = brik;
+             ejetGrunde          = new ArrayList<>();
+             felt                = 1;
     }
 
     //***GETTER METHODS***----------------------------------------------------------------------------------------------
@@ -48,6 +54,34 @@ public class Spiller {
 
     public Missioner getMissioner() {
         return missioner;
+    }
+
+    public List<Grund> getEjetGrunde() {
+        return ejetGrunde;
+    }
+
+    public int getFelt() {
+        return felt;
+    }
+
+    //***SETTER METHODS***----------------------------------------------------------------------------------------------
+    public void setSpillerPenge(int spillerPenge) {
+        this.spillerPenge = spillerPenge;
+    }
+
+    public void setFelt(int felt) {
+        if(felt > 0 && felt < 37) {
+            this.felt = felt;
+        } else throw new IllegalArgumentException("feltet skal skal være i mellem 1 og 36.");
+    }
+
+    //***ADD & REMOVE METHODS***----------------------------------------------------------------------------------------
+    public void addEjetGrund(Grund grund){
+        ejetGrunde.add(grund);
+    }
+
+    public void removeEjetGrund(Grund grund){
+        ejetGrunde.remove(grund);
     }
 
     //***METHODS***-----------------------------------------------------------------------------------------------------
